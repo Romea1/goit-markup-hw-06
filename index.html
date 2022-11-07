@@ -433,10 +433,26 @@
                         </li>
                     </ul>
                 </div>
+                <div class="subscription">
+                    <p class="social-title"> ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+                    <ul class="subscription-list list">
+                        <li> <input class="subscription-form " type="email" name="email" id="" placeholder="E-mail" />
+                        </li>
+                        <li> <button class="subscription-btn" type="button">Підписатися
+                                <svg class="subscription-list-icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-telegram">
 
+                                    </use>
+                                </svg>
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
+    <!--------------Форма, модальне вікно-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
@@ -446,41 +462,53 @@
             </button>
             <form class="form" autocomplete="off">
                 <h1 class="form-title">Залиште свої дані, ми вам передзвонимо</h1>
+                <label class="form-name" for="name">Ім'я</label>
                 <div class="form-field">
-                    <label class="form-name" for="name">Імя</label>
                     <input class="contact-form" type="text" name="name" id="name" placeholder="" autofocus />
-                    <svg class="contact-form-img" width="18" height="18">
+                    <svg class="contact-form-img" width="12" height="12">
                         <use href="./images/sprite.svg#icon-form-name">
                         </use>
                     </svg>
                 </div>
+
+                <label class="form-name" for="tel">Телефон</label>
                 <div class="form-field">
-                   <label class="form-name"  for="tel">Телефон</label>
-                   <input class="contact-form" type="tel" name="tel" id="tel" placeholder="" />
-                   <svg class="contact-form-img" width="18" height="18">
-                <use href="./images/sprite.svg#icon-form-tel">
-                </use>
-                   </svg>
-             </div>
-                <div class="form-field">
-                    <label class="form-name" for="mail">Пошта</label>
-                    <input class="contact-form" type="mail" name="mail" id="mail" autocomplete="on" />
-                    <svg class="contact-form-img" width="18" height="18">
-                    <use href="./images/sprite.svg#icon-form-mail">
-                    </use>
-                </svg>
-            </div>
-                <div class="form-field">
-                    <label class="form-name" for="comment"> Коментар</label>
-                    <textarea class="comment" type="comment" name="comment" id="comment" cols="30" rows="6" placeholder="Введіть текст"></textarea>
+                    <input class="contact-form" type="tel" name="tel" id="tel" placeholder="" />
+                    <svg class="contact-form-img" width="13" height="13">
+                        <use href="./images/sprite.svg#icon-form-tel">
+                        </use>
+                    </svg>
                 </div>
-                <div class="form-ckeckbox">
-                    <label class="form-name" for="policy"> Погоджуюся з розсилкою та приймаю <a href="" class="form-policy">Умови
+                <label class="form-name" for="mail">Пошта</label>
+                <div class="form-field">
+                    <input class="contact-form" type="email" name="email" id="mail" autocomplete="on" />
+                    <svg class="contact-form-img" width="15" height="12">
+                        <use href="./images/sprite.svg#icon-form-mail">
+                        </use>
+                    </svg>
+                </div>
+                <label class="form-name" for="comment"> Коментар</label>
+                <div class="form-field">
+                    <textarea class="comment" type="comment" name="comment" id="comment" cols="30" rows="6"
+                        placeholder="Введіть текст"></textarea>
+                </div>
+
+                <div class="contact-form-checkbox">
+
+                    <input class="checkbox" type="checkbox" name="policy" id="accept-policy" />
+                    <svg class="contact-form-chk" width="16" height="15">
+                        <use href="./images/sprite.svg#icon-form-checkbox">
+                        </use>
+                    </svg>
+
+
+                    <label class="form-name-chk" for="accept-policy"> Погоджуюся з розсилкою та приймаю <a href=""
+                            class="form-policy"> Умови
                             договору</a></label>
-                    <input type="checkbox" name="policy" id="policy" />
                 </div>
+
                 <button class="form-button" type="submit">Відправити</button>
-                </form>
+            </form>
 
         </div>
     </div>
