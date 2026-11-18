@@ -8,6 +8,9 @@
 .features-list-item{
 width:100%;
 }
+  .features-icon {
+      display: none;
+  }
 
          @media screen and (min-width:768px) {
     .features-list-item{
@@ -20,6 +23,7 @@ width:100%;
     
     
          @media screen and (min-width:1158px) {
+         
     .features-list-item {
             width: calc((100% - 3*24px) /4);
         }
