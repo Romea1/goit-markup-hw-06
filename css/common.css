@@ -36,33 +36,28 @@ a {
  .list {
      list-style: none;
  }
+ CSS
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
 
 button:hover,
 button:focus {
     color: #404bbf;
 }
 
-/* a:hover,
-a:focus {
-    color: #404bbf;
-} */
 
-.web-blue {
-    color: #4d5ae5;
-}
 
-.logo {
-    text-transform: uppercase;
-    font-weight: 700;
-}
 
- .container {
-     width: 1158px;
-     padding-left: 15px;
-     padding-right: 15px;
+  .container {
+     max-width: 320px;
+     padding:0 16px;
+   
      margin-left: auto;
      margin-right: auto;
- }
+ }  
  .sr-only {
      position: absolute;
      white-space: nowrap;
@@ -75,3 +70,33 @@ a:focus {
      clip-path: inset(100%);
      margin: -1px;
  }
+
+
+@media screen and (min-width:768px){
+.container {
+        max-width: 768px;
+         
+    }
+    .section {
+        padding: 96px 0;
+    }
+}
+
+
+@media screen and (min-width:1158px){
+.container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+.section {
+        padding: 120px 0;
+    }
+   
+}
+
+
+
+
+
+
+

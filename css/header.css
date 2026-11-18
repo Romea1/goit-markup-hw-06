@@ -17,7 +17,14 @@
     -ms-flex-align: center;
     align-items: center;
 }
+.web-blue {
+    color: #4d5ae5;
+}
 
+.logo {
+    text-transform: uppercase;
+    font-weight: 700;
+}
 .header-link {
     position: relative;
     display: block;
