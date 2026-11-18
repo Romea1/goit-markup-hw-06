@@ -13,6 +13,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mobile-menu.css">
     <title>Студія</title>
 </head>
 
@@ -36,7 +37,12 @@
                 </ul>
             </nav>
 
-              
+            <button type="button" class="mobile-menu-btn" data-menu-open>
+                <svg class="mobile-menu-btn__icon" width="40" height="40">
+                    <use href="./images/icons.svg#burger-menu">
+                    </use>
+                </svg>
+            </button>
 
  <address>
                 <ul class="contact">
@@ -437,74 +443,81 @@
             </div></div>
     </footer>
 <!-----------FOOTER END-->
+
+
+
+
 <!-- ===MOBILE MENU=== -->
- <div class="burger" id="mobile-menu">
-<button type="button" class="mobile-menu-btn" data-menu-open>
-    <svg class="mobile-menu-btn__icon" width="24" height="24">
-        <use href="./images/icons.svg#burger-menu">
-        </use>
-    </svg>
-</button>
+<div class="mobile-menu" id="mobile-menu" data-menu>
+    <div class="mobile-menu-container">
 
-<address>
-    <ul class="contact">
-        <li class="contact-list-item"><a class="contact-list-link"
-                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="contact-list-item"><a class="contact-list-link" href="tel:+110001111111">+11 (000)
-                111-11-11</a></li>
-    </ul>
-</address>
-
-<div class="mobile-menu" data-menu>
-    <div class="mobile-menu__container">
-        <button type="button" class="mobile-menu__close-btn" data-menu-close>
-            <svg class="mobile-menu_close-icon" width="24" height="24">
-                <use href="./images/icons.svg#ButtonClose">
-                </use>
+        <button type="button" class="mobile-menu-close-btn" data-menu-close>
+            <svg width="24" height="24">
+                <use href="./images/icons.svg#ButtonClose"></use>
             </svg>
         </button>
-        <ul class="btn-list">
-            <li><a href="#features" class="btn-link ">Features</a></li>
-            <li><a href="#team" class="btn-link">Team</a></li>
-            <li><a href="#portfolio" class="btn-link">Portfolio</a></li>
 
-        </ul>
-        <ul class="contact-btn">
-            <li class="contact-btn-list-item"><a class="contact-btn-list-link" href="tel:+110001111111">+11 (000)
-                    111-11-11</a></li>
-            <li class="contact-btn-list-item"><a class="contact-btn-list-link"
-                    href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-        </ul>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a class="mobile-nav-link current" href="#features">Features</a></li>
+                <li><a class="mobile-nav-link" href="#team">Team</a></li>
+                <li><a class="mobile-nav-link" href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
 
-        <ul class="btn-team-icon">
-            <li class="btn-team-icon-propertis list"><a href="http://instagram.com" class="btn-icon">
-                    <svg class="btn-team-list-icon" width="24" height="24">
-                        <use href="./images/icons.svg#Instagr">
-                        </use>
-                    </svg>
-                </a> </li>
-            <li class="btn-team-icon-propertis list"><a href="http://instagram.com" class="btn-icon">
-                    <svg class="btn-team-list-icon" width="24" height="24">
-                        <use href="./images/icons.svg#X">
-                        </use>
-                    </svg>
-                </a> </li>
-            <li class="btn-team-icon-propertis list"><a href="http://facebook.com" class="btn-icon">
-                    <svg class="btn-team-list-icon" width="24" height="24">
-                        <use href="./images/icons.svg#facebook">
-                        </use>
-                    </svg>
-                </a> </li>
-            <li class="btn-team-icon-propertis list"><a href="http://linkedin.com" class="btn-icon">
-                    <svg class="btn-team-list-icon" width="24" height="24">
-                        <use href="./images/icons.svg#in">
-                        </use>
-                    </svg>
-                </a> </li>
-        </ul>
+        <div class="mobile-menu-bottom">
+
+            <ul class="mobile-contacts">
+                <li>
+                    <a class="mobile-phone" href="tel:+110001111111">
+                        +11 (000) 111-11-11
+                    </a>
+                </li>
+
+                <li>
+                    <a class="mobile-mail" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="mobile-social-list">
+                <li>
+                    <a class="mobile-social-link" href="#">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#Instagr"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="mobile-social-link" href="#">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#X"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="mobile-social-link" href="#">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="mobile-social-link" href="#">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#in"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
     </div>
-</div>
 </div>
 <!-- ============== -->
 
