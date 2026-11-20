@@ -16,6 +16,9 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
+    margin-top: 16px;
+        margin-bottom: 16px;
 }
 .web-blue {
     color: #4d5ae5;
@@ -24,6 +27,9 @@
 .logo {
     text-transform: uppercase;
     font-weight: 700;
+
+    padding-top: 16px;
+        padding-bottom: 16px;
 }
 .header-link {
     position: relative;

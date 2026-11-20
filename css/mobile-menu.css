@@ -25,14 +25,16 @@
 }
 
 .mobile-menu-container {
-    position: relative;
+    /* position: relative; */
 
     height: 100%;
-
     padding: 72px 16px 40px;
-
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .mobile-menu-close-btn {
@@ -64,7 +66,7 @@
     color: #404bbf;
 }
 
-/* головна вимога */
+
 .mobile-menu-bottom {
     margin-top: auto;
 }
@@ -92,7 +94,7 @@
 
 .mobile-social-list {
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
 }
 
 .mobile-social-link {
