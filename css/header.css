@@ -17,8 +17,8 @@
     -ms-flex-align: center;
     align-items: center;
 
-    margin-top: 16px;
-        margin-bottom: 16px;
+    /* margin-top: 16px;
+        margin-bottom: 16px; */
 }
 .web-blue {
     color: #4d5ae5;
@@ -225,9 +225,9 @@
             justify-content: space-between;
             align-items: center;
             /* margin-right: 16px;  */
-            margin-left: 16px;
-            margin-bottom: 16px;
-            margin-top: 16px;
+            /* margin-left: 16px; */
+            /* margin-bottom: 16px;
+            margin-top: 16px; */
         }
 
         .navigation,
@@ -265,7 +265,7 @@
                 font-weight: 700;
                 font-size: 36px;
                 line-height: 111%;
-                letter-spacing: 0.02em;
+                letter-spacing: 0.04em;
                 color: var(--ocean);
         }
         .contact-btn {

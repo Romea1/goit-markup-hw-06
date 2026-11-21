@@ -28,14 +28,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    width: calc(100% - 32px);
+    max-width: 288px;
+
     border-radius: 4px;
-    /* padding: 72px 24px 24px; */
-    width: 408px;
-    /* height: 492px; */
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
 
-
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.14),
+        0 1px 3px rgba(0, 0, 0, 0.12),
+        0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .modal-close-btn {
@@ -92,10 +95,7 @@
 
 .form {
 
-    padding-left: 24px;
-    padding-right: 24px;
-padding-top: 72px;
-padding-bottom: 24px;
+padding: 72px 16px 24px;
 
 }
 
@@ -162,9 +162,7 @@ padding-bottom: 24px;
     border-radius: 4px;
     padding: 8px 38px;
     margin-top: 4px;
-    width: 360px;
-    height: 120px;
-    max-width: 360px;
+     height: 120px;
     min-height: 40px;
     padding: 8px 16px;
 
@@ -314,4 +312,13 @@ padding-bottom: 24px;
 .form-button:focus {
     background-color: #404bbf;
     color: #ffffff;
-}
+
+    @media screen and (min-width: 768px) {
+            .modal {
+                max-width: 408px;
+            }
+                          .form {
+                              padding-left: 24px;
+                              padding-right: 24px;
+                          }
+        }

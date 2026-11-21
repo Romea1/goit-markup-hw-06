@@ -13,7 +13,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/mobile-menu.css">
+
     <title>Студія</title>
 </head>
 
@@ -36,22 +36,22 @@
                     </li>
                 </ul>
             </nav>
-
+<address>
+    <ul class="contact">
+        <li class="contact-list-item"><a class="contact-list-link"
+                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="contact-list-item"><a class="contact-list-link" href="tel:+110001111111">+11 (000)
+                111-11-11</a></li>
+    </ul>
+</address>
             <button type="button" class="mobile-menu-btn" data-menu-open>
-                <svg class="mobile-menu-btn__icon" width="40" height="40">
+                <svg class="mobile-menu-btn__icon" width="24" height="24">
                     <use href="./images/icons.svg#burger-menu">
                     </use>
                 </svg>
             </button>
 
- <address>
-                <ul class="contact">
-                    <li class="contact-list-item"><a class="contact-list-link"
-                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="contact-list-item"><a class="contact-list-link" href="tel:+110001111111">+11 (000)
-                            111-11-11</a></li>
-                </ul>
-            </address> 
+ 
         </div>
     </header>
     <main>
@@ -264,14 +264,17 @@
             </div>
         </section>
 <!----Portfolio-->
-        <section class="section" id="portfolio">
+        <section class="section portfolio" id="portfolio">
             <div class="container">
                 <h2 class="portfolio-h2">Our Portfolio</h2>
                 <ul class="portfolio-title">
                     <li class="proect-cart">
                         <a class="proects link" href="">
                             <div class="proect-img">
-                                <img src="./images/portfolio.jpg" alt="застосунки" width="360" height="300">
+                                <img src="./images/portfolio.jpg" 
+                                srcset="./images/portfolio.jpg 1x,
+                                        ./images/portfolio@2x.jpg 2x" 
+                                alt="застосунки" width="360" height="300">
                                 <div class="overlay">
                                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                         Calorie Tracker App · Exotic Fruit Ecommerce App ·
@@ -288,7 +291,10 @@
                     <li class="proect-cart">
                         <a class="proects link" href="">
                             <div class="proect-img">
-                                <img src="./images/portfolio-1.jpg" alt="смартфон" width="360" height="300">
+                                <img src="./images/portfolio-1.jpg" 
+                                srcset="./images/portfolio-1.jpg 1x,
+                                        ./images/portfolio-1@2x.jpg 2x" 
+                                alt="смартфон" width="360" height="300">
                                 <div class="overlay">
                                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                         Calorie Tracker App · Exotic Fruit Ecommerce App ·
@@ -305,7 +311,10 @@
                     <li class="proect-cart">
                         <a class="proects link" href="">
                             <div class="proect-img">
-                                <img src="./images/portfolio-2.jpg" alt="ноутбук" width="360" height="300">
+                                <img src="./images/portfolio-2.jpg" 
+                                srcset="./images/portfolio-2.jpg 1x,
+                                        ./images/portfolio-2@2x.jpg 2x" 
+                                alt="ноутбук" width="360" height="300">
                                 <div class="overlay">
                                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                         Calorie Tracker App · Exotic Fruit
@@ -323,7 +332,10 @@
                     <li class="proect-cart">
                         <a class="proects link" href="">
                             <div class="proect-img">
-                                <img src="./images/portfolio-3.jpg" alt="автомобіль" width="360" height="300">
+                                <img src="./images/portfolio-3.jpg" 
+                                srcset="./images/portfolio-3.jpg 1x,
+                                        ./images/portfolio-3@2x.jpg 2x" 
+                                alt="автомобіль" width="360" height="300">
                                 <div class="overlay">
                                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                         Calorie Tracker App · Exotic Fruit Ecommerce App ·
@@ -340,7 +352,10 @@
                     <li class="proect-cart">
                         <a class="proects link" href="">
                             <div class="proect-img">
-                                <img src="./images/portfolio-4.jpg" alt="смартфон" width="360" height="300">
+                                <img src="./images/portfolio-4.jpg" 
+                                srcset="./images/portfolio-4.jpg 1x,
+                                        ./images/portfolio-4@2x.jpg 2x" 
+                                alt="смартфон" width="360" height="300">
                                 <div class="overlay">
                                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                         Calorie Tracker App · Exotic Fruit
@@ -357,7 +372,10 @@
 
                     <li class="proect-cart"><a class="proects link" href="">
                             <div class="proect-img">
-                                <img src="./images/portfolio-5.jpg" alt="дівчина" width="360" height="300">
+                                <img src="./images/portfolio-5.jpg" 
+                                srcset="./images/portfolio-5.jpg 1x,
+                                        ./images/portfolio-5@2x.jpg 2x" 
+                                alt="дівчина" width="360" height="300">
                                 <div class="overlay">
                                     <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                         Calorie Tracker App · Exotic Fruit
@@ -456,7 +474,7 @@
     <div class="mobile-menu-container">
 
         <button type="button" class="mobile-menu-close-btn" data-menu-close>
-            <svg width="24" height="24">
+            <svg width="8" height="8">
                 <use href="./images/icons.svg#ButtonClose"></use>
             </svg>
         </button>
@@ -469,8 +487,8 @@
             </ul>
         </nav>
 
-        <div class="mobile-menu-bottom">
-
+        <!-- <div class="mobile-menu-bottom"> -->
+<address>
             <ul class="mobile-contacts">
                 <li>
                     <a class="mobile-phone" href="tel:+110001111111">
@@ -484,7 +502,7 @@
                     </a>
                 </li>
             </ul>
-
+</address>
             <ul class="mobile-social-list">
                 <li>
                     <a class="mobile-social-link" href="#">
@@ -519,7 +537,7 @@
                 </li>
             </ul>
 
-        </div>
+        <!-- </div> -->
 
     </div>
 </div>

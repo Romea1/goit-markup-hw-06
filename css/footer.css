@@ -25,7 +25,9 @@
     gap: 24px;
 }
 .footer-cont {
-    margin-top: 16px;
+    margin-top: 18px;
+    margin-left:auto;
+    margin-right:auto;
     display: inline-block;
     font-size: 16px;
     line-height: 1.5;
@@ -66,6 +68,8 @@
 } */
 .footer-social-list {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .social-link {
@@ -236,12 +240,14 @@ color: #fff;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-
+.footer{
+    padding: 96px 0;
+}
     .footer .container {
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
-        gap: 24px;
+        /* gap: 24px; */
         row-gap: 72px;
         width: 584px;
     }

@@ -1,7 +1,10 @@
 .portfolio {
     padding: 120px 0;
 }
-
+.section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 .portfolio-title {
     display: flex;
     flex-wrap: wrap;
@@ -153,7 +156,7 @@
     }
 
     .proect-cart {
-        width: 288px;
+    width: calc((100% - 24px) / 2);
     }
 }
 /* DESKTOP */

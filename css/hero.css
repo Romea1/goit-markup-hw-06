@@ -17,7 +17,7 @@ background-image:
 }
 
 .hero-title {
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     line-height: 1.07;
     text-align: center;      
     color: #fff;
@@ -67,7 +67,19 @@ background-image:
             image-set(url("../images/hero-tablet.jpg") 1x,
                 url("../images/hero-tablet@2x.jpg") 2x);
     }
-  
+          .hero-title {
+            margin-bottom:36px;
+              max-width: 670px;
+              margin-left: auto;
+              margin-right: auto;
+            font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 107%;
+                letter-spacing: 0.02em;
+                text-align: center;
+                color: var(--white);
+          }
 }
 
 @media screen and (min-width: 1158px) {
@@ -79,5 +91,17 @@ background-image:
             image-set(url("../images/hero-bg.jpg") 1x,
                 url("../images/hero-bg@2x.jpg") 2x);
     }
-    
+    .hero-title {
+        margin-bottom: 48px;
+        max-width: 670px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 107%;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: var(--white);
+    }
 }
