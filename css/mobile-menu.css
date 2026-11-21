@@ -25,17 +25,13 @@
 }
 
 .mobile-menu-container {
-    /* position: relative; */
+    position: relative;
 
     height: 100%;
     padding: 72px 16px 40px;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    }
 
 .mobile-menu-close-btn {
     position: absolute;
@@ -71,14 +67,14 @@ background: var(--cornflower);
 
 
 .mobile-menu-bottom {
-    
+margin-top: auto;
 }
 
 .mobile-contacts {
     display: flex;
     flex-direction: column;
     gap: 24px;
-margin-top:168px;
+
     margin-bottom: 48px;
     font-style: normal
 }
