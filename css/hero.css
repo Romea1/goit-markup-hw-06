@@ -17,6 +17,7 @@ background-image:
 }
 
 .hero-title {
+    max-width: 216px;
     margin-bottom: 72px;
     line-height: 1.07;
     text-align: center;      
@@ -69,7 +70,7 @@ background-image:
     }
           .hero-title {
             margin-bottom:36px;
-              max-width: 670px;
+              max-width: 496px;
               margin-left: auto;
               margin-right: auto;
             font-family: var(--font-family);
@@ -93,7 +94,7 @@ background-image:
     }
     .hero-title {
         margin-bottom: 48px;
-        max-width: 670px;
+        max-width: 496px;
         margin-left: auto;
         margin-right: auto;
         font-family: var(--font-family);

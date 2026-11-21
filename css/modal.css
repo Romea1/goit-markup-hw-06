@@ -312,13 +312,14 @@ padding: 72px 16px 24px;
 .form-button:focus {
     background-color: #404bbf;
     color: #ffffff;
-
-    @media screen and (min-width: 768px) {
-            .modal {
-                max-width: 408px;
-            }
-                          .form {
-                              padding-left: 24px;
-                              padding-right: 24px;
-                          }
+}
+@media screen and (min-width: 768px) {
+        .modal {
+            max-width: 408px;
         }
+
+        .form {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
